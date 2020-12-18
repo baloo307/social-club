@@ -7,9 +7,6 @@ from django.utils.text import slugify
 from django.contrib.auth import get_user_model
 User = get_user_model()
 
-from django import template
-register = template.Library()
-
 
 class Group(models.Model):
     name = models.CharField(max_length=255, unique=True)
